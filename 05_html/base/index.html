@@ -85,7 +85,7 @@
                         <input type="email" id="mail" name="mail" placeholder="это поле обязательное для заполнения" required>*e-mail<br>
                         <textarea name="text-area" lang="ru">Форма отправки</textarea><br>
                         <input type="submit" value="Отправить"><br>
-                          <p><em>* - обязателбное поле</em></p>  
+                          <em>* - обязательное поле</em>  
                     </fieldset>
                 </form>
             </td>
@@ -131,11 +131,11 @@
                 <form name="validation" method="get" action="http://fe.it-academy.by/TestForm.php">
                     <fieldset>
                         <legend>Строка поиска</legend>
-                        <input type="text" name="info" lang="ru" placeholder="Только русские буквы" required pattern="^[А-Яа-я]+$"><br>
+                        <input type="text" name="info" lang="ru" placeholder="Только русские буквы" required pattern="^[ А-Яа-я]+$"><br>
                          <em>
                             Телефонный номер в формате<br>
                              +ХХХХХХХХХХХХ, где Х - любое число</em>
-                        <input type="text" name="mobile" pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" placeholder="+375-29-1234567">
+                        <input type="text" name="mobile" pattern="^(\+375|80)-(29|25|44|33)-(\d{3})(\d{2})(\d{2})$" placeholder="+375-29-1234567">
                         <input type="submit" value="Проверить">
                     </fieldset>
                 </form>
