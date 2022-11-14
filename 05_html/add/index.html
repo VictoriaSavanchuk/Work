@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<HTML> 
+  <HEAD> 
+    <META charset="utf-8"> 
+    <TITLE>Пример страницы</TITLE> 
+  </HEAD> 
+  <BODY> 
+     <h1 align="center">Заполните анкету</h1>
+     <form name="survey" method="get" action="http://fe.it-academy.by/TestForm.php">
+      <fieldset>
+        <legend>Личные данные</legend>
+        <label>
+          <input type="text" name="surname" placeholder="Фамилия" required autofocus size="25" pattern="^[А-Яа-я]+$">
+               text: Только кириллица, без пробелов
+        </label><br>   
+        <label>
+          <input type="text" name="name" placeholder="Имя" required size="20" pattern="^[А-Яа-я]+$">
+               text: Только кириллица, без пробелов
+        </label><br>  
+        <label>
+          <input type="text" name="name1" placeholder="Отчество" required size="24" pattern="^[А-Яа-я]+$">
+               text: Только кириллица, без пробелов
+        </label>   
+          <fieldset>
+            <legend>Паспортные данные</legend>
+            <label>
+              text: Серия-только заглавные 2 латинские буквы с длинной 2, количество букв не менее 2<br> 
+              text: Номер паспорта - только цифры с длинной 7 и максимальным количеством символов 7, количество цифр не менее7<br>
+            <input type="text" name="series" required size="2" maxlength="2" pattern="^[A-Z]{2}">
+            <input type="text" name="number" required size="7" maxlength="7" pattern="[0-9]{7}">
+          </label>
+          </fieldset>  
+          <fieldset>
+            <LEGEND>Дата рождения</LEGEND>
+            <label>
+              <input type="text" name="year" size="4" maxlength="4" pattern="[0-9]{4}" placeholder="2000">
+              text: Год рождения 4-е цифры 
+            </label><br>
+            <label>
+              <select name="month" id="month">
+                <option value="1" selected>Январь</option>
+                <option value="2">Февраль</option>
+                <option value="3">Март</option>
+                <option value="4">Апрель</option>
+                <option value="5">Май</option>
+                <option value="6">Июнь</option>
+                <option value="7">Июль</option>
+                <option value="8">Август</option>
+                <option value="9">Сентябрь</option>
+                <option value="10">Октябрь</option>
+                <option value="11">Ноябрь</option>
+                <option value="12">Декабрь</option>
+              </select> select: Месяц рождения
+            </label><br>
+            <label>
+              <input type="number" name="date" min="1" max="31" step="1">
+              number: Диапозон от 1 до 31
+            </label>
+          </fieldset> 
+          <select name="nationality" id="nationality" required>
+            <option value="1">РБ</option>
+            <option value="2">Россия</option>
+            <option value="3">Польша</option>
+            <option value="4">Литва</option>
+            <option value="5">Латвия</option>
+          </select><br>
+          <label>Адрес:<br>
+            <input type="text" name="adress">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Кнопки управления</legend>
+          <input type="submit" value="Отправить">
+          <input type="reset" value="Сбросить"><br>
+          <img src='email.jpg'>
+    </button>
+    
+        </fieldset>
+     </form>
+     </BODY> 
+</HTML> 
