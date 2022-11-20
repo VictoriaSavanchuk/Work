@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<HTML> 
+  <HEAD> 
+    <META charset="utf-8"> 
+    <TITLE>Пример страницы</TITLE> 
+    <style>
+        .navigation{
+            width: 15em;
+            height: 20em;
+            background-color: yellowgreen;
+            float: left;
+        }
+        .article{
+            background-color: aqua;
+            margin-bottom: .2em;
+        }
+        .picture{
+            float:right
+        }
+        .footer{
+            background-color: blue;
+            clear:both
+        }
+    </style>
+  </HEAD> 
+  <BODY> 
+     <div>  
+        <div class="navigation"><strong>Блок навигации</strong>
+           <ul>
+            <li>Ширина 15em</li>
+            <li>Должен присутствовать цвет фона</li>
+            <li>Распологается слева</li>
+            <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+           </ul>  
+        </div>
+           <div class="article">
+              <div><strong>Статья1</strong>
+                 Размер блока:<br>
+                 Занимает всю доступную ширину.<br>
+                 Должен присутствовать цвет фона.<br>
+                 Во всех статьях сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom
+           </div>
+              <div><strong>Статья2</strong>
+                Размер блока:<br>
+                Занимает всю доступную ширину.<br>
+                Должен присутствовать цвет фона.<br>
+                Во всех статьях сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom<br>
+                Картинка вставлена при помощи тега, плавание организовано по правому краю внутри<br>
+                данной статьи для этой картинки 
+            </div>
+           <img class="picture" src="загрузка.png">
+         </div>
+        <div class="footer">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.</div>   
+           
+   
+     </div> 
+    </BODY> 
+</HTML> 

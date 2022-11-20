@@ -1,0 +1,36 @@
+.card1{
+    background-image:url("cards.7e0a18f0.png");
+    width: 170px; height: 220px;
+    background-repeat: no-repeat;
+    background-position: 25px 25px;
+    
+  }
+  .card2{
+    background-image:url("cards.7e0a18f0.png");
+    width: 140px; height: 198px;
+    background-repeat: no-repeat;
+    background-position: -289px -201px;
+    margin: -150px 60px
+    
+  }
+  .card3{
+    background-image:url("cards.7e0a18f0.png");
+    background-repeat: no-repeat;
+    background-position: -145px -1593px;
+    width: 140px; height: 198px;
+    margin: -160px 90px
+  }
+  .card4{
+    background-image:url("cards.7e0a18f0.png");
+    background-repeat: no-repeat;
+    background-position: -290px -1991px;
+    width: 140px; height: 198px;
+    margin: -160px 120px
+  }
+  .card5{
+    background-image:url("cards.7e0a18f0.png");
+    background-repeat: no-repeat;
+    background-position: -145px -2189px;
+    width: 140px; height: 198px;
+    margin: -160px 150px
+  }
