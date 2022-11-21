@@ -4,28 +4,38 @@
     <META charset="utf-8"> 
     <TITLE>Пример страницы</TITLE> 
     <style>
+        .base{
+            background-color: bisque;
+        }
         .navigation{
             width: 15em;
-            height: 20em;
             background-color: yellowgreen;
             float: left;
+        }
+        .content{
+            margin-left: 15em;
         }
         .article{
             background-color: aqua;
             margin-bottom: .2em;
+            white-space: pre;
+            margin-top: -.8em;
         }
         .picture{
-            float:right
+            float:right;
         }
         .footer{
             background-color: blue;
-            clear:both
+            
+        }
+        .enter{
+            clear:both;
         }
     </style>
   </HEAD> 
   <BODY> 
-     <div>  
-        <div class="navigation"><strong>Блок навигации</strong>
+     <div class="base">  
+        <div class="navigation"><h3>Блок навигации</h3>
            <ul>
             <li>Ширина 15em</li>
             <li>Должен присутствовать цвет фона</li>
@@ -33,26 +43,25 @@
             <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
            </ul>  
         </div>
-           <div class="article">
-              <div><strong>Статья1</strong>
-                 Размер блока:<br>
-                 Занимает всю доступную ширину.<br>
-                 Должен присутствовать цвет фона.<br>
+           <div class="content">
+              <div class="article"><h3>Статья1</h3>
+                 Размер блока:
+                 Занимает всю доступную ширину.
+                 Должен присутствовать цвет фона.
                  Во всех статьях сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom
            </div>
-              <div><strong>Статья2</strong>
-                Размер блока:<br>
-                Занимает всю доступную ширину.<br>
-                Должен присутствовать цвет фона.<br>
-                Во всех статьях сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom<br>
-                Картинка вставлена при помощи тега, плавание организовано по правому краю внутри<br>
+              <div class="article"><h3>Статья2</h3>
+                Размер блока:
+                Занимает всю доступную ширину.
+                Должен присутствовать цвет фона.
+                Во всех статьях сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom
+                Картинка вставлена при помощи тега, плавание организовано по правому краю внутри
                 данной статьи для этой картинки 
+                <img class="picture" src="icon_mail.png">
+                <div class="enter"></div>
             </div>
-           <img class="picture" src="загрузка.png">
          </div>
         <div class="footer">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.</div>   
-           
-   
      </div> 
     </BODY> 
 </HTML> 
