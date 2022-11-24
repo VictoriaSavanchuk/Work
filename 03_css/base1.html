@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<HTML> 
+  <HEAD> 
+    <META charset="utf-8"> 
+    <TITLE>Пример страницы</TITLE> 
+    <style>
+      div{
+        border-bottom-width: 2px;
+        border-bottom-color: beige;
+        border-bottom-style: solid;
+        position: relative;
+        
+      }
+      .menu>div:hover div.submenu{display:block; position:absolute;
+
+      }
+      .submenu{
+        position:absolute left;
+        display: none;
+      }
+    </style>
+  </HEAD> 
+  <BODY> 
+     <div class="menu">
+      <div>Понедельник</div>
+      <div>Вторник</div>
+      <div>Среда
+        <div class="submenu">
+          <div>Завтрак</div>
+          <div>Обед</div>
+          <div>Ужин</div>
+        </div>
+      </div>
+      <div>Четверг</div>
+      <div>Пятница</div>
+      <div>Суббота</div>
+     </div>
+
+   </BODY> 
+</HTML> 
