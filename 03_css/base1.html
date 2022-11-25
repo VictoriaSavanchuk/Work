@@ -2,22 +2,36 @@
 <HTML> 
   <HEAD> 
     <META charset="utf-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <TITLE>Пример страницы</TITLE> 
-    <style>
-      div{
-        border-bottom-width: 2px;
-        border-bottom-color: beige;
-        border-bottom-style: solid;
+    <style>      
+      .menu>div{
+        width: 150px; 
+        float: left;
+      }
+      .menu>div{background-color: rgb(140, 135, 129); 
+        border:groove rgb(13, 13, 14) 3px; 
+        cursor: pointer; 
         position: relative;
-        
-      }
-      .menu>div:hover div.submenu{display:block; position:absolute;
-
-      }
-      .submenu{
-        position:absolute left;
+       }
+      .submenu{width: 150px; 
         display: none;
       }
+      .menu>div:hover div.submenu{
+        display:block; 
+        position:absolute; 
+        z-index: 1;
+       }
+      .submenu>div{
+        background-color: rgb(194, 194, 185); 
+        border:groove rgb(20, 20, 23) 3px; 
+        cursor: pointer;
+      }
+      @mediaall and (max-width: 952px){
+      .menu>div{
+        width: 150px;
+      }
+      }       
     </style>
   </HEAD> 
   <BODY> 
