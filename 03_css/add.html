@@ -8,25 +8,41 @@
       .menu>div{
         width: 150px; 
         float: left;
-      }
-      .menu>div{background-color: rgb(140, 135, 129); 
+        background-color: rgb(140, 135, 129); 
         border:groove rgb(13, 13, 14) 3px; 
         cursor: pointer; 
         position: relative;
        }
-      .submenu{width: 150px; 
-        display: none;
+      .menu>:hover{
+        background-color: aquamarine;
       }
-      .menu>div:hover div.submenu{
-        display:block; 
-        position:absolute; 
-        z-index: 1;
-       }
+      .submenu{width: 150px; 
+       display: block;       
+      }
       .submenu>div{
         background-color: rgb(194, 194, 185); 
         border:groove rgb(20, 20, 23) 3px; 
         cursor: pointer;
+        border-radius: 5px;
       }
+      .submenu>:hover{
+        background-color: blue;
+      }
+      .submenu{
+        height: 0;
+        opacity: 0;
+        transition-duration: 4s;
+      }
+      .menu>:hover .submenu{
+        display: block;
+        position:absolute; 
+        z-index: 1;
+       }
+      .menu>:hover .submenu{
+        opacity: 1;
+        transition-duration: 4s;
+      }
+       
       @media all and (max-width: 952px){
         .menu>div{
         float: none;

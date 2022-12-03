@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<HTML> 
+  <HEAD> 
+    <META charset="utf-8"> 
+    <TITLE>Пример страницы</TITLE> 
+    <style>
+       .file{
+        width: 80%
+       }
+       .file>div{
+            border: solid 1px grey;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            text-indent: 20px;
+        }
+        li::before{content: url(img/1.png);
+        }
+    </style>
+  </HEAD> 
+  <BODY> 
+     <div class="file">
+        <h2>Форматы файлов.</h2>
+        <div>.DOC или .doc (от англ.) <img src="img/2.png"> <a href="https://ru.wikipedia.org/wiki/.doc">document</a>- расширение имени файла,
+            используемое для файлов, представляющих текст, с разметкой или без. Расширение .DOC часто использовалось для
+            обозначения простых текстовых файлов без формирования, однако позже стало использоваться для двоичных форматов 
+            с разметкой.<br>
+            <a href="Word">Документ MS Word</a><img src="img/w.png">
+        </div>
+        <div>
+            Portable Document Format (<img src="img/2.png"><a href="https://ru.wikipedia.org/wiki/Portable_Document_Format">PDF</a>>)-межплатформенный формат электронных документов,
+            разработанный фирмой Adobe Systems с использованием ряда возможностей языка Postscipt.
+            <br>
+            <a href="PDF">Документ PDF <img src="img/pdf.png"></a>
+        </div>
+        <div>ZIP-популярный формат сжатия данных и архивация файлов. Файл в этом формате обычно имеет расширение 
+            <img src="img/2.png"> <a href="https://ru.wikipedia.org/wiki/ZIP">.zip</a> и хранит в сжатом или несжатом виде один или несколько
+            файлов, которое можно из него извлечь путем распаковки с помощью специальной программы. 
+            <br>
+            <a href="archive">Архив <img src="img/3.png"></a>
+        </div>
+        <h2>Это список файлов</h2>
+        <ul style="list-style-type: none;">
+            <li><a href="Word" >Документ MS Word</a></li>
+            <li><a href="PDF">Документ PDF</a></li>
+            <li><a href="archive">Архив</a></li>
+        </ul> 
+     </div>
+
+   </BODY> 
+</HTML> 
